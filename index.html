@@ -4,94 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site d'apprentissage</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #222;
-    }
-    header {
-      background: #1f2937;
-      color: white;
-      padding: 24px 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 16px;
-    }
-    main {
-      max-width: 1000px;
-      margin: 32px auto;
-      padding: 0 20px;
-    }
-    .hero, .section {
-      background: white;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      margin-bottom: 24px;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      padding: 18px;
-      background: #fafafa;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 16px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Site d'apprentissage</h1>
-    <nav>
-      <a href="#cours">Cours</a>
-      <a href="#offre">Offre</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Site d'apprentissage</h1>
+      <nav>
+        <a href="#cours">Cours</a>
+        <a href="#offre">Offre</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section class="hero">
       <h2>Bienvenue</h2>
       <p>Mon premier site hébergé sur GitHub Pages.</p>
-      <a class="btn" href="https://github.com/">Aller sur GitHub</a>
+      <a class="btn" href="https://github.com/" target="_blank" rel="noopener">Aller sur GitHub</a>
     </section>
 
     <section class="section" id="cours">
       <h2>Cours disponibles</h2>
       <div class="cards">
-        <div class="card">
+        <article class="card">
           <h3>Introduction</h3>
           <p>Découvrir GitHub Pages et le fonctionnement d’un site statique.</p>
-        </div>
-        <div class="card">
+        </article>
+
+        <article class="card">
           <h3>HTML</h3>
           <p>Créer et modifier une page avec les balises de base.</p>
-        </div>
-        <div class="card">
+        </article>
+
+        <article class="card">
           <h3>Publication</h3>
           <p>Déployer, mettre à jour et vérifier le site en ligne.</p>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -107,7 +57,9 @@
   </main>
 
   <footer>
-    <p>© 2026 Site d'apprentissage</p>
+    <div class="container">
+      <p>© 2026 Site d'apprentissage</p>
+    </div>
   </footer>
 </body>
 </html>
