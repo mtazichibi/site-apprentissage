@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site d'apprentissage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f7f9fc;
+      color: #222;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue</h1>
-  <p>Mon premier site hébergé sur GitHub Pages.</p>
+  <div class="card">
+    <h1>Bienvenue</h1>
+    <p>Mon premier site hébergé sur GitHub Pages.</p>
+
+    <h2>Cours disponibles</h2>
+    <ul>
+      <li>Introduction à GitHub Pages</li>
+      <li>Créer et modifier un fichier HTML</li>
+      <li>Publier un site statique</li>
+    </ul>
+
+    <h2>Offre</h2>
+    <p>Cette page sert de modèle pour apprendre à ajouter des contenus et les republier facilement.</p>
+
+    <a class="btn" href="https://github.com/">Aller sur GitHub</a>
+  </div>
 </body>
 </html>
